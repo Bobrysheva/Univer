@@ -9,8 +9,8 @@ import java.util.Random;
 public class Student implements EnterUnivesity, Learn {
     private String name;
     private int age;
-    ArrayList<Teacher> teachers;
-    String university;
+    private ArrayList<Teacher> teachers;
+    private String university;
 
     public Student(String name, int age, ArrayList<Teacher> teachers, String university) {
         this.name = name;

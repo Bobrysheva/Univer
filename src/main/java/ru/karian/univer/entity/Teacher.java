@@ -10,6 +10,7 @@ public class Teacher implements EnterUnivesity, TeachStudents {
     private int age;
     private String subject;
     private String univName;
+    private ArrayList<Student> students;
 
     public Teacher(String name, int age, String subject, String univName) {
         this.name = name;
@@ -26,6 +27,13 @@ public class Teacher implements EnterUnivesity, TeachStudents {
         return subject;
     }
 
+    public ArrayList<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(ArrayList<Student> students) {
+        this.students = students;
+    }
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("\n" + "Преподаватель: ").append("\n");

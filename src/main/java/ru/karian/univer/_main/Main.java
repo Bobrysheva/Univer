@@ -28,6 +28,10 @@ public class Main {
         students.add(student2);
         students.add(student3);
 
+        teacher1.setStudents(students);
+        teacher2.setStudents(students);
+        teacher3.setStudents(students);
+
         University university = new University("РГГУ", teachers, students);
 
         System.out.println(university.startSemester());
